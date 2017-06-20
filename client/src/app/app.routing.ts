@@ -17,4 +17,5 @@ const appRoutes: Routes = [
     { path: '**', redirectTo: '' }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes, { useHash: false });
+//export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes, { useHash: false });
+export const routing = RouterModule.forRoot(appRoutes);

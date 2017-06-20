@@ -1,12 +1,13 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { User } from '../../shared/models/index';
 import { UserService } from '../../shared/services/index';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['home.component.css'],
+    encapsulation: ViewEncapsulation.None
 })
 
 export class HomeComponent implements OnInit {
